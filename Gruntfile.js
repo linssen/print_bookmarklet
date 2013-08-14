@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'print_bookmarklet.min.js': ['print_bookmarklet.js']
+                    'src/print_bookmarklet.min.js': ['src/print_bookmarklet.js']
                 }
             }
         }
@@ -20,10 +20,10 @@ module.exports = function(grunt) {
         'buildReadme',
         'Builds the readme from the template',
         function() {
-            var bookmarklet = grunt.file.read('print_bookmarklet.min.js'),
-                readme = grunt.file.read('README.tmpl');
+            var bookmarklet = grunt.file.read('src/print_bookmarklet.min.js'),
+                readme = grunt.file.read('src/README.tmpl');
 
-            readme = readme.replace('{{ bookmarklet }}', bookmarklet);
+            readme = readme.replace(/\{\{ bookmarklet \}\}/g, bookmarklet);
             grunt.file.write('README.md', readme);
 
             grunt.log.writeln('Readme built from template');
