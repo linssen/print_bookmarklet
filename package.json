@@ -1,0 +1,23 @@
+{
+  "name": "print_bookmarklet",
+  "version": "1.0.0",
+  "description": "Swap print stylesheets for screen and vice versa",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt": "~0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:linssen/print_bookmarklet.git"
+  },
+  "author": "Wil Linssen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linssen/print_bookmarklet/issues"
+  }
+}
